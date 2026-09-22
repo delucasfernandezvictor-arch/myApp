@@ -1,9 +1,12 @@
 import { Component, OnInit } from '@angular/core';
+import { IonHeader, IonToolbar, IonTitle, IonContent } from '@ionic/angular'; // <-- Ruta corregida
+
 @Component({
   selector: 'app-galeria',
   templateUrl: './galeria.component.html',
   styleUrls: ['./galeria.component.scss'],
-  imports: [],
+  standalone: true,
+  imports: [IonHeader, IonToolbar, IonTitle, IonContent],
 })
 export class GaleriaComponent implements OnInit {
 
